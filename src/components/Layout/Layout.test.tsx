@@ -1,9 +1,11 @@
 import React from 'react';
 import {render, screen} from '@testing-library/react';
 import Layout from './Layout';
+import Header from 'components/Header/Header';
+import Footer from 'components/Footer/Footer';
 
-jest.mock('components/Header/Header', () => () => <div>Mocked Header</div>);
-jest.mock('components/Footer/Footer', () => () => <div>Mocked Footer</div>);
+jest.mock('components/Header/Header', () => <Header />);
+jest.mock('components/Footer/Footer', () => <Footer />);
 
 describe('Layout Component', () => {
   test('renders Header, children and Footer', () => {
