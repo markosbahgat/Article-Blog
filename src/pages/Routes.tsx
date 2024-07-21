@@ -1,10 +1,10 @@
-import React from 'react';
+import React, {lazy} from 'react';
 import {Route, Routes} from 'react-router-dom';
 import Home from './Home';
 import Article from './Article';
 import Layout from 'components/Layout/Layout';
-import NotFound from './Error';
 
+const NotFound = lazy(() => import('./Error'));
 const AppRoutes: React.FC = () => {
   return (
     <Layout>

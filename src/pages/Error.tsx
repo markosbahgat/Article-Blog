@@ -2,7 +2,7 @@ import React from 'react';
 const NotFound: React.FC = () => {
   return (
     <main
-      className="grid min-h-full place-items-center bg-[color:var(--title)] px-6 py-24 sm:py-32 lg:px-8 w-full"
+      className="grid min-h-full place-items-center bg-[color:var(--title)] px-6 py-24 sm:py-32 lg:px-8 w-full h-screen"
       id="error-page">
       <div className="text-center">
         <p className="text-base font-semibold text-indigo-600">404</p>
