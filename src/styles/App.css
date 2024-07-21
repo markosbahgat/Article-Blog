@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --background: rgb(17 24 39);
+  ---title: #ffffff;
+  --text-subtitle: #f7fbffcc;
+  --text-paragraph: #dbe3ea;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #ffffff;
+    --title: rgb(17 24 39);
+    --text-subtitle: #f7fbffcc;
+    --text-paragraph: #dbe3ea;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    :root {
+      --background: rgb(17 24 39);
+      --title: #ffffff;
+      --text-subtitle: rgb(55 65 81);
+      --text-paragraph: #dbe3ea;
+    }
+  }
+}
+
+[color-scheme='light'] {
+  --background: #ffffff;
+  --title: rgb(17 24 39);
+  --text-subtitle: #f7fbffcc;
+  --text-paragraph: #dbe3ea;
+}
+[color-scheme='dark'] {
+  --background: rgb(17 24 39);
+  --title: #ffffff;
+  --text-subtitle: rgb(55 65 81);
+  --text-paragraph: #dbe3ea;
+}
